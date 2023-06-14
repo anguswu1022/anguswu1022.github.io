@@ -46,7 +46,7 @@ const NavBar = () => {
             key={id}
             className="px-4 cursor-pointer text-xl font-bold pt-4 text-black transition duration-150 border-b-4 border-transparent hover:border-black"
           >
-            <NavLink to={to} activeClassName="active" className="text-black">
+            <NavLink to={to} className="text-black">
               {link}
             </NavLink>
           </li>
@@ -66,7 +66,6 @@ const NavBar = () => {
             <li key={id} className="px-4 cursor-pointer py-6 text-4xl">
               <NavLink
                 to={to}
-                activeClassName="active"
                 className="text-black"
                 onClick={() => setNav(false)}
               >

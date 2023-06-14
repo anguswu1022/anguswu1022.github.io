@@ -48,7 +48,7 @@ const Contact = () => {
 
   return (
     <div className="w-full h-screen bg-cream p-4 text-black">
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+      <div className="flex flex-col p-4 min-h-screen justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-4 flex flex-col items-center justify-center">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact Me
@@ -75,10 +75,10 @@ const Contact = () => {
               }}
               value={form.name}
               placeholder="What's your name?"
-              className="p-2 bg-white border-b-4 border-black rounded-md text-black focus:outline-none "
+              className="p-1 bg-white border-b-2 border-black rounded-md text-black focus:outline-none"
               onChange={handleChange}
-            ></input>
-            <label className="pt-6">Email:</label>
+            />
+            <label className="pt-4">Email:</label>
             <input
               type="email"
               id="email"
@@ -90,23 +90,23 @@ const Contact = () => {
               onInvalid={(e) => {
                 e.target.setCustomValidity("Please enter your email");
               }}
-              className="p-2 bg-white border-b-4 border-black rounded-md text-black focus:outline-none"
-            ></input>
-            <label className="pt-6">Message:</label>
+              className="p-1 bg-white border-b-2 border-black rounded-md text-black focus:outline-none"
+            />
+            <label className="pt-4">Message:</label>
             <textarea
               name="message"
               id="message"
               placeholder="What do you want to say?"
-              rows="10"
+              rows="5"
               required
               value={form.message}
               onChange={handleChange}
               onInvalid={(e) => {
                 e.target.setCustomValidity("Please enter your message");
               }}
-              className="p-2 bg-white border-b-4 border-black rounded-md text-black focus:outline-none"
+              className="p-1 bg-white border-b-2 border-black rounded-md text-black focus:outline-none"
             ></textarea>
-            <button className="text-white bg-gray-300 px-6 py-3 my-8 mx-auto border-b-4 border-black flex items-center rounded-md hover:scale-110 hover:bg-gray-500 duration-300">
+            <button className="text-white bg-gray-300 px-4 py-2 mt-4 mx-auto border-b-2 border-black flex items-center rounded-md hover:scale-110 hover:bg-gray-500 duration-300">
               Send
             </button>
           </form>
