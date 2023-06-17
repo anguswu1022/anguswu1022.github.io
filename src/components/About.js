@@ -10,10 +10,10 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl ">
-          Hi! I'm Angus, a recent graduate from the Immersive Software
-          Engineering program at Hack Reactor. Coming from a background in
-          biochemistry, I've always been captivated by the intricate
-          problem-solving nature it entails.
+          Hello, I'm Angus, a full-stack software engineer trained through the
+          Immersive Software Engineering program at Hack Reactor. Coming from a
+          background in biochemistry, I've always been captivated by the
+          intricate problem-solving nature.
         </p>
         <br />
         <p className="text-xl">
